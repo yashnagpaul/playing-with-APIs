@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scratch-pad.css" />
+    <title>scratch-pad</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>WeatherApp</h1>
+    </header>
+    <main class="main">
+      <form class="main__form">
+        <!-- <label class="main__input-label" for="city_name">City</label> -->
+        <input
+          class="main__search-field"
+          type="text"
+          name="city_input"
+          placeholder="Search for a city..."
+        />
+        <input class="main__submit-btn" type="submit" value="SEARCH" />
+        <textarea
+          readonly
+          class="main__text-area"
+          placeholder="Awaiting input..."
+          name="output_text"
+        ></textarea>
+      </form>
+      <div class="main__weather-icon"></div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scratch-pad.js"></script>
+  </body>
+</html>
